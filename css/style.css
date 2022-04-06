@@ -1,0 +1,298 @@
+nav {
+  padding: 1rem;
+  background-color: white;
+  opacity: 1;
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+nav ul a {
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: block;
+  font-weight: bold; }
+
+nav ul a:hover {
+  background-color: wheat;
+  font-weight: bold; }
+
+.menu {
+  color: black; }
+
+.contact {
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr;
+  gap: 20px;
+  grid-template-areas: "title title" "contacto email"  "gmail form" "mesa mesa" "completa completa" "texto texto"; }
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Germania One', cursive;
+  grid-area: title; }
+
+.contacto {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  grid-area: contacto; }
+
+.gmail {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 17px;
+  line-height: 3rem;
+  grid-area: gmail; }
+
+.email {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  grid-area: email; }
+
+.form {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 17px;
+  grid-area: form; }
+
+.mesa {
+  text-align: center;
+  grid-area: mesa; }
+
+.completa {
+  text-align: center;
+  grid-area: completa; }
+
+.texto {
+  text-align: center;
+  grid-area: texto; }
+
+.footer {
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: black; }
+
+.profes {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Germania One", cursive; }
+
+.maestras {
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr 40px, 1fr);
+  gap: 20px;
+  grid-template-areas: "vane1 adri1 vale1" "vane2 adri2 vale2" "vane3 adri3 vale3" "presentacion presentacion presentacion"; }
+
+.vane1 {
+  margin: auto;
+  transition: all 1s ease-out;
+  opacity: .9;
+  border-radius: 10px;
+  grid-area: vane1; }
+  .vane1:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1; }
+
+.adri1 {
+  margin: auto;
+  transition: all 1s ease-out;
+  opacity: .9;
+  border-radius: 10px;
+  grid-area: adri1; }
+  .adri1:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1; }
+
+.vale1 {
+  margin: auto;
+  transition: all 1s ease-out;
+  opacity: .9;
+  border-radius: 10px;
+  grid-area: vale1; }
+  .vale1:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1; }
+
+.vane2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  grid-area: vane2; }
+
+.adri2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  grid-area: adri2; }
+
+.vale2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  grid-area: vale2; }
+
+.vane3 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  line-height: 1,5px;
+  grid-area: vane3; }
+
+.adri3 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  line-height: 1,5px;
+  grid-area: adri3; }
+
+.vale3 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  line-height: 1,5px;
+  grid-area: vale3; }
+
+.presentacion {
+  margin: auto;
+  grid-area: presentacion;
+  border-radius: 10px; }
+
+.sec1 {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px; }
+
+.videos {
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1fr);
+  gap: 20px;
+  grid-template-areas: "espanol portugues ingles"; }
+
+.portugues {
+  margin: auto;
+  transition: all 1s ease-out;
+  opacity: .9; }
+  .portugues:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1; }
+
+.espanol {
+  margin: auto;
+  transition: all 1s ease-out;
+  opacity: .9; }
+  .espanol:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1; }
+
+.ingles {
+  margin: auto;
+  transition: all 1s ease-out;
+  opacity: .9; }
+  .ingles:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1; }
+
+.bienvenidos {
+  padding: 1rem;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Germania One", cursive; }
+
+.lema {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  line-height: 2.5; }
+
+.comentarios {
+  padding: 1rem;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Germania One", cursive; }
+
+@media screen and (max-width: 768px) {
+  .videos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "espanol" "portugues" "ingles"; }
+  .maestras {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: "vane1" "vane2"  "vane3"  "adri1"  "adri2"  "adri3" "vale1"  "vale2"  "vale3" "presentacion"; }
+  .vane3 {
+    margin: 5px 50px 50px 50px; }
+  .adri3 {
+    margin: 5px 50px 50px 50px; }
+  .vale3 {
+    margin: 5px 50px 50px 50px; }
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: "title" "contacto"  "gmail" "email"  "form" "mesa" "completa" "texto"; } }
+
+@media screen and (max-width: 320px) {
+  .videos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "espanol" "portugues" "ingles"; }
+  .maestras {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: "vane1" "vane2"  "vane3"  "adri1"  "adri2"  "adri3" "vale1"  "vale2"  "vale3" "presentacion"; }
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: "title" "contacto"  "gmail" "email"  "form" "mesa" "completa" "texto"; } }
+
+.facebook {
+  color: blue; }
+
+.instagram {
+  color: fuchsia; }
+
+.gmail {
+  color: red; }
+
+.whatsapp {
+  color: green; }
+
+.sociales, .redessociales {
+  width: 70%;
+  background-color: lightgreen;
+  padding: 1rem;
+  display: flex; }
+
+.redessociales {
+  background-color: orange;
+  width: 30%;
+  border: 5px dotted blue; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: white;
+  background: linear-gradient(180deg, white 12%, #d4f5ff 49%, #64bfda 100%); }

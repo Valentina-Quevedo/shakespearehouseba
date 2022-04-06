@@ -1,0 +1,14 @@
+@import "./header";
+@import "./main";
+@import "./variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(212,245,255,1) 49%, rgba(100,191,218,1) 100%);
+}

@@ -1,0 +1,233 @@
+//map para fonts//
+$fonts:(
+    letra1: 'Germania One',
+    letra2: 'Libre Baskerville',
+);
+
+.profes{
+    font-size: 50px;
+    text-align: center;
+    font-family: map-get($fonts , letra1) , cursive;
+}
+//mixin//
+@mixin conocenos {
+    margin: auto;
+    transition: all 1s ease-out;
+    opacity: .9;
+    border-radius: 10px;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+}
+.maestras{
+    width: 100%;
+    margin:20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr 40px, 1fr);
+    gap:20px;
+    grid-template-areas: 
+    "vane1 adri1 vale1"
+    "vane2 adri2 vale2"
+    "vane3 adri3 vale3"
+    "presentacion presentacion presentacion"
+}
+.vane1{
+    @include conocenos;
+    grid-area: vane1;
+}
+.adri1{
+    @include conocenos;
+    grid-area: adri1;
+    
+}
+.vale1{
+    @include conocenos;
+    grid-area: vale1;
+}
+.vane2{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 20px;
+    grid-area: vane2;
+}
+.adri2{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 20px;
+    grid-area: adri2;
+}
+.vale2{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 20px;
+    grid-area: vale2;
+}
+.vane3{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 15px;
+    line-height: 1,5px;
+    grid-area: vane3;
+}
+.adri3{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 15px;
+    line-height: 1,5px;
+    grid-area: adri3;
+}
+.vale3{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 15px;
+    line-height: 1,5px;
+    grid-area: vale3;
+}
+
+.presentacion{
+    margin: auto;
+    grid-area: presentacion;
+    border-radius: 10px;
+}
+.sec1{
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    font-size: 20px;
+}
+//mixin//
+@mixin cambios {
+    margin: auto;
+    transition: all 1s ease-out;
+    opacity: .9;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+}
+.videos{
+    width: 100%;
+    margin:20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    gap:20px;
+    grid-template-areas: 
+    "espanol portugues ingles"
+}
+.portugues{
+    @include cambios;
+}
+.espanol{
+    @include cambios
+}
+.ingles{
+    @include cambios
+}
+.bienvenidos{
+    padding: 1rem;
+    font-size: 50px;
+    text-align: center;
+    font-family: map-get($fonts , letra1 ), cursive;
+}
+.lema{
+    text-align: center;
+    font-family: map-get($fonts , letra2 ), serif;
+    line-height: 2.5;
+}
+.comentarios{
+    padding: 1rem;
+    font-size: 40px;
+    text-align: center;
+    font-family: map-get($fonts , letra1 ), cursive;
+}
+@media screen and (max-width: 768px){
+    .videos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "espanol"
+        "portugues"
+        "ingles";
+    }
+    .maestras{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
+        "vane1"
+        "vane2" 
+        "vane3" 
+        "adri1" 
+        "adri2" 
+        "adri3"
+        "vale1" 
+        "vale2" 
+        "vale3"
+        "presentacion";
+    }
+    .vane3{
+        margin: 5px 50px 50px 50px;
+    }
+    .adri3{
+        margin: 5px 50px 50px 50px;
+    }
+    .vale3{
+        margin: 5px 50px 50px 50px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
+        "title"
+        "contacto" 
+        "gmail"
+        "email" 
+        "form"
+        "mesa"
+        "completa"
+        "texto";
+    }
+}
+@media screen and (max-width: 320px){
+    .videos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "espanol"
+        "portugues"
+        "ingles";
+    }
+    .maestras{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
+        "vane1"
+        "vane2" 
+        "vane3" 
+        "adri1" 
+        "adri2" 
+        "adri3"
+        "vale1" 
+        "vale2" 
+        "vale3"
+        "presentacion";
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
+        "title"
+        "contacto" 
+        "gmail"
+        "email" 
+        "form"
+        "mesa"
+        "completa"
+        "texto";
+    }
+}

@@ -1,0 +1,35 @@
+$redes:(
+    facebook: blue,
+    instagram: fuchsia,
+    gmail: red,
+    whatsapp: green,
+);
+$facebook: map-get($redes, facebook );
+$instagram: map-get($redes, instagram );
+$gmail: map-get($redes, gmail );
+$whatsapp: map-get($redes, whatsapp );
+
+.facebook{
+    color: $facebook
+}
+.instagram{
+    color: $instagram
+}
+.gmail{
+    color: $gmail
+}
+.whatsapp{
+    color: $whatsapp
+}
+.sociales{
+    width: 70%;
+    background-color: lightgreen;
+    padding: 1rem;
+    display: flex;
+}
+    .redessociales{
+        @extend .sociales;
+        background-color: orange;
+        width: 30%;
+        border: 5px dotted blue;
+    }
